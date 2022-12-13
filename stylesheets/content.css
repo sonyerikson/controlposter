@@ -1,0 +1,228 @@
+
+html {
+  background: black;
+}
+
+strong {font-family: "MultiTypePixel Regular"}
+p {font-family: "NeutralFace"}
+
+.figma {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+}
+
+.line1, .line2, .two, .twohalf2, .three, .five {display: flex;}
+.line1black {
+  width: 79.9%;
+  height: 80px;
+  background: black;
+  overflow: hidden;
+}
+
+.firtstext{
+  margin-top: 23px;
+  margin-left: 29px;
+  color: white;
+  font-size: 36px;
+  letter-spacing: 0.28em;
+  white-space: nowrap;
+  animation: text-move 2s infinite linear;
+}
+
+.firtstext:hover{
+  color: #FF4B00; 
+}
+
+@keyframes text-move {
+  0% {
+      transform: translateX(0)
+  }
+  100% {
+      transform: translateX(-1091px)
+  }
+}
+
+.line1block1 {
+  width: 6.7%;
+  height: 80px;
+  background: #FF4B00;
+  overflow: hidden;
+}
+.line1block2 {
+  width: 6.7%;
+  height: 80px;
+  background: black;
+  background: url('images/cross.svg');
+  background-size: 100% 93%;
+  background-position: bottom;
+  animation: cross-change 0.5s steps(1) infinite;
+  animation-play-state: paused;
+}
+.line1block2:hover {animation-play-state: running;}
+
+.line1block3 {
+  width: 6.7%;
+  height: 80px;
+  background: #3E3E3E;
+}
+.ctrl, .ctrl1, .ctrl2 {
+  line-height: 50%;
+  font-size: 33px;
+  color: white;
+  letter-spacing: normal;
+}
+
+.ctrl:hover, .ctrl1:hover, .ctrl2:hover {
+  text-align: center;
+  letter-spacing: -0.29em;
+  transition: all .3s ease-out;
+}
+
+.ctrl {
+  animation: ctrl-change 0.5s steps(1) infinite;
+  animation-play-state: running;
+}
+
+@keyframes ctrl-change {
+  0% {
+    color: white;
+  }
+  50% {
+    color: #FF4B00;
+  }
+}
+
+.ctrl1 {
+  animation: ctrl-change 1s steps(1) infinite;
+  animation-play-state: running;
+}
+
+@keyframes ctrl-change {
+  0% {
+    color: #FF4B00;
+  }
+  50% {
+    color: white;
+  }
+}
+
+.ctrl2 {
+  animation: ctrl-change 0.3s steps(1) infinite;
+  animation-play-state: running;
+}
+
+@keyframes ctrl-change {
+  0% {
+    color: #FF4B00;
+  }
+  50% {
+    color: white;
+  }
+}
+
+.line2big {
+  width: 79.9%;
+  height: 580px;
+  background: black;
+}
+.line2small {
+  width: 20.1%;
+  height: 580px;
+  background: #3E3E3E;
+}
+
+.twobig1 {
+  width: 50%;
+  height: 520px;
+  background: #FF4B00;
+}
+.twobig2 {
+  width: 50%;
+  height: 520px;
+  background: white;
+}
+.twohalf1 {
+  width: 100%;
+  height: 50%;
+  background: white;
+}
+.twohalf2 {
+  width: 100%;
+  height: 50%;
+  background: white;
+}
+.part1, .part2, .part3, .part4, .part5, .part6, .part7 {
+  width: calc(100% / 7);
+  height: 100%;
+}
+.part2, .part7 {  background: white;}
+.part3, .part6 {  background: black;}
+.part4 {  background: #FF4B00;}
+.part1, .part5 {  background: #3E3E3E;}
+
+.three1, .three2, .three3 {
+  width: calc(100% / 3);
+  height: 400px;
+}
+.three1 {  background: white;}
+.three2 {  background: black;}
+.three3 {  background: #3E3E3E;}
+
+.four {
+  width: 100%;
+  height: 600px;
+}
+
+.five {
+  width: 100%;
+}
+.line2black {
+  width: 79.9%;
+  height: 80px;
+  background: black;
+}
+.line2block1 {
+  width: 6.7%;
+  height: 80px;
+  background: #3E3E3E;
+}
+.line2block2 {
+  width: 6.7%;
+  height: 80px;
+  background: #FF4B00;
+}
+.line2block3 {
+  width: 6.7%;
+  height: 80px;
+  background: black;
+}
+
+
+.lines {
+  position: relative;
+  margin-top: -240px;
+  margin-left: -80px;
+  animation: lines-move 0.6s linear infinite;
+  animation-play-state: running;
+}
+.lines:hover {
+  animation-play-state: paused;
+}
+
+@keyframes lines-move {
+  0% {left: 0px;}
+  100% {left: 71px;}
+}
+
+@keyframes cross-change {
+  0% {
+    background-image: url('../images/cross.svg');
+  }
+  0.01% {
+    background-image: url('../images/cross2.svg');
+  }
+  50% {
+    background-image: url('../images/cross1.svg');
+  }
+}
