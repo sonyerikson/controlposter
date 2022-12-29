@@ -9,3 +9,7 @@
     font-family: "NeutralFace";
     src: url("../fonts/NeutralFace.otf")
 }
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat.ttf")
+}
